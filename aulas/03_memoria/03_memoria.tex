@@ -1,0 +1,423 @@
+
+\documentclass[xcolor={usenames,dvipsnames},10pt,compress,aspectratio=169]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{amsthm}
+\usepackage{url}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{times,mathptmx}
+\usepackage{pdfpages}
+\usepackage{mdframed}
+\usepackage{tikz}
+\usepackage{alltt}
+%\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage{color}
+
+\usetikzlibrary{arrows,shapes}
+
+\usetheme{Madrid}
+%\usetheme{Boadilla}
+%\usetheme{Darmstadt}
+%\usetheme{Frankfurt}
+%\usetheme{CambridgeUS}
+%\usetheme{AnnArbor}
+%\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usecolortheme{seagull}
+
+\setbeamercovered{transparent}
+
+\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{navigation symbols}{}
+%\setbeamersize{text margin left=1em,text margin right=1em}
+
+\newcommand{\titulo}{Alocação Dinâmica de Memória}
+\newcommand{\disciplina}{ELC1067 - Laboratório de Programação II}
+\newcommand{\nome}{João Vicente Ferreira Lima (UFSM)}
+
+\lecture[1]{\aula}{aula01}
+\def\lecturename{\aula}
+
+\newcommand{\Red}[1]{{\color{red}#1}}
+\newcommand{\red}[1]{{\color{red}#1}}
+\newcommand{\Blue}[1]{{\color{blue}#1}}
+\newcommand{\blue}[1]{{\color{blue}#1}}
+
+\newcommand{\PBS}[1]{\let\temp=\\#1\let\\=\temp}
+\newcommand{\RRCOL}{\PBS\raggedright\hspace{0pt}}
+
+\newcommand{\p}[1]{\texttt{#1}}
+\newenvironment{code}{%
+  \begin{alltt}%
+  }{%
+  \end{alltt}%
+}
+
+\makeatletter
+%\setbeamertemplate{headline}{}
+% {%
+%   \leavevmode%
+%   \@tempdimb=2.4375ex%
+%   \ifnum\beamer@subsectionmax<\beamer@sectionmax%
+%     \multiply\@tempdimb by 4%
+%   \else%
+%     \multiply\@tempdimb by\beamer@subsectionmax%
+%   \fi%
+%   \ifdim\@tempdimb>0pt%
+%     \advance\@tempdimb by 1.125ex%
+%     \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{section in head/foot}%
+%       \vbox to\@tempdimb{\vfil\insertsectionnavigation{.5\paperwidth}\vfil}%
+%     \end{beamercolorbox}%
+%     \begin{beamercolorbox}[wd=.45\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
+%       \vbox
+%       to\@tempdimb{\vfil\insertsubsectionnavigation{.45\paperwidth}\vfil}%
+%     \end{beamercolorbox}%
+%     \begin{beamercolorbox}[wd=.05\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
+%       \vbox
+%       to\@tempdimb{\vfil\hfil\insertframenumber\vfil\vfil}%
+%     \end{beamercolorbox}%
+%   \fi%
+% }
+
+\def\dohead{\beamer@headcounter=4\relax\beamer@headcounter=1\loop\ifnum\beamer@headcounter<\beamer@totalheads%
+  \advance\beamer@headcounter by1\relax%
+  \csname @@head\the\beamer@headcounter\endcsname\repeat}
+
+\makeatother
+
+\title[\titulo]{\titulo}
+
+\subtitle{\disciplina}
+
+\author[João V. F. Lima]{\nome}
+
+\institute[UFSM]{Departamento de Linguagens e Sistemas de Computação \\ Universidade Federal de Santa Maria \\ \url{jvlima@inf.ufsm.br} \\ \url{http://www.inf.ufsm.br/~jvlima}}
+\date{2020/2}
+
+\graphicspath{{.}{figs/}}
+
+\newtheorem{mydef}{Definição}[section]
+%\newtheorem{myteo}{Teorema}[section]
+%------------------------------------------------------------------------------
+%\newcommand{\xkaapi}{XKaapi\xspace}
+%------------------------------------------------------------------------------
+% Typesetting Listings
+\usepackage{listings}
+\lstset{
+  language=C++,
+  %basicstyle=\scriptsize\ttfamily,
+  basicstyle=\normalsize\ttfamily,
+  %basicstyle=\small\ttfamily,
+  %basicstyle=\footnotesize\ttfamily,
+  aboveskip=0pt,
+  belowskip=0pt,
+  mathescape=false,
+  columns=flexible,
+%  numbers=none,
+  numbers=left,
+%  showtabs=true,
+%  showspaces=true,
+  breaklines=true
+}
+%------------------------------------------------------------------------------
+\lstset{commentstyle=\color{blue}}
+%\lstset{stringstyle=\ttfamily}
+%\lstset{ classoffset=1, 
+%            morekeywords={kaapi,omp,task,data,alloca, declare, reduction, identity, parallel,sync,taskwait,cilk,spawn,tbb,css,cilk\_spawn,cilk\_sync,cilk\_for,offload},
+%            keywordstyle=\color{Red}\bfseries
+%           }
+%\lstset{ classoffset=2, 
+%            morekeywords={value,read,write,readwrite,reduction,untied,firstprivate,TaskBodyCPU,TaskBodyGPU,ka,Signature,RW,CW,range2d\_r,range2d\_rw,range2d,Spawn,Fork,Shared\_w,Shared\_r,Shared,a1,target,device,copyin,copyout,input,implements,copy\_deps,RPWP,range2d\_rpwp,rangeindex,Memory,Register,SetStaticSched,Sync,Unregister,Community,System,join\_community,SpawnMain,leave,initialize,terminate,logfile,array,SetArch,ArchHost,ArchCUDA,W,R,gpuStream,pointer\_w,pointer\_r,pointer\_cw,pointer},
+%            keywordstyle=\color{Blue}\bfseries
+%           }
+%\lstset{ classoffset=3, 
+%            morekeywords={storage,ld},
+%            keywordstyle=\bfseries
+%           }
+%\lstset{ classoffset=4, 
+%            morekeywords={in,out,inout,cout,concurrent},
+%            keywordstyle=\color{Red}\bfseries
+%           }
+%           
+\lstset{classoffset=0, showstringspaces=false}
+%------------------------------------------------------------------------------
+\mdfsetup{
+  backgroundcolor=gray!10,
+%  roundcorner=10pt,
+}
+%------------------------------------------------------------------------------
+\newcommand{\restorefootline}{\setbeamertemplate{navigation symbols}{}}
+%\newcommand{\setfootline}[1]{\setbeamertemplate{navigation symbols}{\textcolor{black}{\textbf{#1}}}}
+\newcommand{\includeslides}[4]{%
+  %\setfootline{#1}%
+  {
+    \setbeamercolor{background canvas}{bg=}
+    \includepdf[pages={#2},%
+    pagecommand={},
+%    pagecommand={\begin{frame}[default]{}\end{frame}},
+    #4,%
+    turn=false,noautoscale=false,column=false,columnstrict=false,openright=false,frame=false]{#3}%
+  }
+  %\restorefootline%
+}
+%------------------------------------------------------------------------------
+\begin{document}
+
+\begin{frame}
+%  \titlepage
+  \maketitle
+  \mode<presentation>
+  {
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+      \raggedleft
+	\includegraphics[width=2cm]{logo_ufsm}
+      \end{column}
+      \begin{column}{0.5\textwidth}
+	\includegraphics[width=2cm]{logo_inf}
+      \end{column}
+    \end{columns}
+  }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Outline}
+    \tableofcontents[hideallsubsections]
+%    \tableofcontents
+\end{frame}
+
+\AtBeginSection{
+  \begin{frame}
+    \frametitle{Outline}
+    \tableofcontents[currentsection,hideothersubsections]
+  \end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alocação de memória}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+  \frametitle{Ponteiros}
+  \begin{columns}
+    \begin{column}{\textwidth}
+      \begin{center}
+    \includegraphics[width=0.7\textwidth]{pointer_memory_representation}
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Matriz de caracteres}
+  \begin{columns}
+    \begin{column}{\textwidth}
+      \begin{center}
+    \includegraphics[width=0.7\textwidth]{C2Darray}
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%\begin{frame}
+%  \frametitle{Entrada e saída}
+%  \begin{itemize}
+%  \item 
+%  \end{itemize}
+%\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Alocação de memória}
+  \begin{block}{New e delete}
+\begin{lstlisting}
+int* ptr1 = nullptr;       // nullptr eh NULL em C++
+int* ptr2 {nullptr};       // inicializador padrao
+
+auto num = new int;       // aloca inteiro
+*num = 33;
+delete num;               // libera memoria
+
+auto vetor = new int[10]; // vetor de 10 numeros
+delete[] vetor;           // libera um vetor 
+
+int* vetor {new int[10]}; // outra forma
+delete[] vetor;
+\end{lstlisting}
+  \end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Matrizes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+  \frametitle{Alocação de memória}
+  \begin{block}{New e delete}
+\begin{lstlisting}
+int** matriz {nullptr};
+int N = 10;
+matriz = new int*[N];        // vetor com ponteiros
+for(auto i = 0; i < N; i++)
+    matriz[i] = new int[N];  // linha da matriz
+
+// inicia valores
+for(auto i = 0; i < N; i++)
+    for(auto j = 0; j < N; j++)
+        matriz[i][j] = 0;
+
+// destroi matriz: cada linha e depois matriz
+for(auto i = 0; i < N; i++)
+    delete[] matriz[i];
+delete[] matriz;
+\end{lstlisting}
+\end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Valgrind}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \textbf{Valgrind} é uma ferramenta de depuração e instrumentação
+  de programas para análise de memória.
+  \begin{block}{Exemplo}
+\begin{lstlisting}
+int main(void)
+{
+    auto vetor = new int[100];
+    for(auto i= 0; i < 100; i++)
+        vetor[i] = 1;
+    delete[] vetor;
+    return 0;
+}
+\end{lstlisting}
+\end{block}
+%
+  \begin{alertblock}{Execução}
+\begin{lstlisting}
+$ valgrind ./exemplo
+\end{lstlisting}
+\end{alertblock}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \begin{block}{Saída (correto)}
+\begin{lstlisting}
+HEAP SUMMARY:
+    in use at exit: 72,704 bytes in 1 blocks
+  total heap usage: 2 allocs, 1 frees, 73,104 bytes allocated
+
+LEAK SUMMARY:
+   definitely lost: 0 bytes in 0 blocks
+   indirectly lost: 0 bytes in 0 blocks
+     possibly lost: 0 bytes in 0 blocks
+   still reachable: 72,704 bytes in 1 blocks
+        suppressed: 0 bytes in 0 blocks
+
+ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+\end{lstlisting}
+\end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \begin{block}{Exemplo com erro 1}
+\begin{lstlisting}
+int main(void)
+{
+    auto vetor = new int[100];
+    for(auto i= 0; i < 100; i++)
+        vetor[i] = 1;
+    delete vetor;
+    return 0;
+}
+\end{lstlisting}
+\end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \vspace{-5mm}
+  \begin{block}{Saída (erro 1)}
+\begin{lstlisting}
+Mismatched free() / delete / delete []
+   at 0x4C2C2BC: operator delete(void*) (in ...)
+   by 0x4007B4: main (in /home/jvlima/alloc2)
+ Address 0x5a37c80 is 0 bytes inside a block of size 400 alloc'd
+   at 0x4C2B800: operator new[](unsigned long) (in ...)
+   by 0x400777: main (in /home/jvlima/alloc2)
+
+HEAP SUMMARY:
+    in use at exit: 72,704 bytes in 1 blocks
+  total heap usage: 2 allocs, 1 frees, 73,104 bytes allocated
+
+LEAK SUMMARY:
+   definitely lost: 0 bytes in 0 blocks
+   indirectly lost: 0 bytes in 0 blocks
+     possibly lost: 0 bytes in 0 blocks
+   still reachable: 72,704 bytes in 1 blocks
+        suppressed: 0 bytes in 0 blocks
+\end{lstlisting}
+\end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \begin{block}{Exemplo com erro 2}
+\begin{lstlisting}
+int main(void)
+{
+    auto vetor = new int[100];
+    for(auto i= 0; i < 100; i++)
+        vetor[i] = 1;
+    return 0;
+}
+\end{lstlisting}
+\end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind}
+  \begin{block}{Saída (erro 2)}
+\begin{lstlisting}
+HEAP SUMMARY:
+    in use at exit: 73,104 bytes in 2 blocks
+  total heap usage: 2 allocs, 0 frees, 73,104 bytes allocated
+
+LEAK SUMMARY:
+   definitely lost: 400 bytes in 1 blocks
+   indirectly lost: 0 bytes in 0 blocks
+     possibly lost: 0 bytes in 0 blocks
+   still reachable: 72,704 bytes in 1 blocks
+        suppressed: 0 bytes in 0 blocks
+\end{lstlisting}
+\end{block}
+\end{frame}
+%------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{}
+  \begin{center}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \raggedleft
+\includegraphics[width=4cm]{logo_ufsm}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+\includegraphics[width=4cm]{logo_inf}
+    \end{column}
+  \end{columns}
+\end{center}
+
+\end{frame}
+%------------------------------------------------------------------------------
+
+\end{document}
