@@ -18,7 +18,7 @@ Os tipos de triângulos são:
 
 O objetivo deste T1 é  ler os lados de um triângulo da entrada e imprimir o tipo do triângulo ou valores inválidos. 
 Cada linha contem três lados `(a,b,c)`.
-O programa fará a leitura dos lados da entrada padrão (`std::cin`) como os números inteiros ($0 < n <= 50$) digitados abaixo:
+O programa fará a leitura dos lados da entrada padrão (`std::cin`) como os números inteiros (`0 < n <= 50`) digitados abaixo:
 ```
 6 8 10
 3 3 3
