@@ -25,9 +25,9 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 1 | 2022-09-12 Seg   | Apresentação da disciplina ([slides](https://docs.google.com/presentation/d/1TRYCyxJVxvltjvEDIneNl-2YCT2Ys2RNN4BRObkhfVE/edit?usp=sharing) e [vídeo](https://youtu.be/cUiFPopsXR4))   |
 | 2 | 2022-09-14 Qua   | [Introdução C++](./aulas/introducao_cxx) ([vídeo](https://youtu.be/pB-MdBKNpNo), [slides](./aulas/02_intro_cxx/02_intro_cxx.pdf))  |
 | - | 2022-09-19 Seg | **Feriado** (Revolução Farroupilha) |
-| 3 | 2022-09-21 Qua | Sobre [T1](./trabalhos/T1) |
-| 4 | 2022-09-26 Seg |  Alocação dinâmica de memória ([vídeo](https://youtu.be/KxvOkY4ipII), [slides](./aulas/03_memoria/03_memoria.pdf))  |
-| 5 | 2022-09-28 Qua |  Sobre [T2](./trabalhos/T2) |
+| 3 | 2022-09-21 Qua | Alocação dinâmica de memória ([vídeo](https://youtu.be/KxvOkY4ipII), [slides](./aulas/03_memoria/03_memoria.pdf))  |
+| 4 | 2022-09-26 Seg | Sobre [T2](./trabalhos/T2) |
+| 5 | 2022-09-28 Qua |   |
 | 6 | 2022-10-03 Seg | Alocação dinâmica de memória |
 | 7 | 2022-10-05 Qua | Sobre [T3](./trabalhos/T3) |
 | 8 | 2022-10-10 Seg | [Suporte no Windows para C++](./aulas/08_windows) |
