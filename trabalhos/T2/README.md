@@ -3,7 +3,7 @@
 
 ## Deadline
 
-Prazo: **05/11/2022 (Qua)** pelo link do GitHub (https://classroom.github.com/a/tFNAO2Xo).
+Prazo: **05/10/2022 (Qua)** pelo link do GitHub (https://classroom.github.com/a/tFNAO2Xo).
 
 Você deve escolher seu nome na lista de alunos. Em seguida, o GitHub irá criar um repositório deste trabalho em seu usuário.
 
