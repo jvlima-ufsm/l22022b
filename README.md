@@ -23,20 +23,20 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 |  # | Data             | Assunto          |
 |---:|------------------|:-----------------|
 | 1 | 2022-09-12 Seg   | Apresentação da disciplina ([slides](https://docs.google.com/presentation/d/1TRYCyxJVxvltjvEDIneNl-2YCT2Ys2RNN4BRObkhfVE/edit?usp=sharing) e [vídeo](https://youtu.be/cUiFPopsXR4))   |
-| 2 | 2022-09-14 Qua   | [Introdução C++](./aulas/introducao_cxx) ([vídeo](https://youtu.be/pB-MdBKNpNo), [slides](./aulas/02_intro_cxx/02_intro_cxx.pdf))  |
+| 2 | 2022-09-14 Qua   | [Introdução C++](./aulas/introducao_cxx) ([vídeo](https://youtu.be/pB-MdBKNpNo), [slides](./aulas/02_intro_cxx/02_intro_cxx.pdf)), [T1](./trabalhos/T1)  |
 | - | 2022-09-19 Seg | **Feriado** (Revolução Farroupilha) |
 | 3 | 2022-09-21 Qua | Alocação dinâmica de memória ([vídeo](https://youtu.be/KxvOkY4ipII), [slides](./aulas/03_memoria/03_memoria.pdf))  |
 | 4 | 2022-09-26 Seg | [Suporte no Windows para C++](./aulas/08_windows) |
-| 5 | 2022-09-28 Qua | Sobre [T2](./trabalhos/T2)  |
-| 6 | 2022-10-03 Seg | Alocação dinâmica de memória |
-| 7 | 2022-10-05 Qua | Sobre [T3](./trabalhos/T3) |
+| 5 | 2022-09-28 Qua | [T2](./trabalhos/T2) - Campo minado |
+| 6 | 2022-10-03 Seg | [Listas em C++](./aulas/09_listas) |
+| 7 | 2022-10-05 Qua | [T3](./trabalhos/T3) |
 | 8 | 2022-10-10 Seg | |
 | - | 2022-10-12 Qua | **Feriado** (Nossa Senhora Aparecida)  |
 | 9 | 2022-10-17 Seg | [T3](./trabalhos/T3) |
 | 10 | 2022-10-19 Qua | |
 | 11 | 2022-10-24 Seg | |
 | 12 | 2022-10-26 Qua | |
-| 13 | 2022-10-31 Seg | [Listas em C++](./aulas/09_listas) |
+| 13 | 2022-10-31 Seg | |
 | - | 2022-11-02 Qua | **Feriado** (Finados)  |
 | - | 2022-11-07 Seg | **JAI** |
 | - | 2022-11-09 Qua | **JAI** |
