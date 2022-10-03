@@ -19,7 +19,7 @@ int main(void)
   lista.push_back(10);  // insere no fim
   lista.push_front(0);  // insere no começo
  
-  for(auto it = begin(lista); it != end(lista); it++)
+  for(auto it = lista.begin(); it != lista.end(); it++)
     std::cout << *it << ' ';
 
   std::cout << std::endl;
@@ -52,11 +52,11 @@ int main(void)
 {
   std::list<int> lista {2,3,4};
  
-  lista.insert( end(lista), 10);   // insere no fim
-  lista.insert( begin(lista), 0);  // insere no começo
-  lista.insert( ++begin(lista), 1); // insere depois do 1o elemento da lista
+  lista.insert( lista.end(), 10 );   // insere no fim
+  lista.insert( lista.begin(), 0 );  // insere no começo
+  lista.insert( ++(lista.begin()), 1 ); // insere depois do 1o elemento da lista
  
-  for(auto it = begin(lista); it != end(lista); it++)
+  for(auto it = lista.begin(); it != lista.end() it++)
     std::cout << *it << ' ';
 
   std::cout << std::endl;
@@ -90,7 +90,7 @@ int main(void)
   lista.remove( 2 );   // remove todos os elementos igual a 2
   lista.remove_if( removeNegativos );  // aplica uma função que decide quem remover
  
-  for(auto it = begin(lista); it != end(lista); it++)
+  for(auto it = lista.begin(); it != lista.end(); it++)
     std::cout << *it << ' ';
   std::cout << std::endl;
  
@@ -121,3 +121,4 @@ Uma lista encadeada pode ter tamanho praticamente ilimitado. As funções dispon
 - `size()` retorna o tamanho da lista
 - `max_size()` retorno o potencial máximo de capacidade que esta lista pode ter.
 - `clear()` limpa a lista
+  
