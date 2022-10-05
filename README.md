@@ -29,10 +29,10 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 4 | 2022-09-26 Seg | [Suporte no Windows para C++](./aulas/08_windows) |
 | 5 | 2022-09-28 Qua | [T2](./trabalhos/T2) - Campo minado |
 | 6 | 2022-10-03 Seg | [Listas em C++](./aulas/09_listas) |
-| 7 | 2022-10-05 Qua | [T3](./trabalhos/T3) |
+| 7 | 2022-10-05 Qua | [T3](./trabalhos/T3) - Previdência simplificada |
 | 8 | 2022-10-10 Seg | |
 | - | 2022-10-12 Qua | **Feriado** (Nossa Senhora Aparecida)  |
-| 9 | 2022-10-17 Seg | [T3](./trabalhos/T3) |
+| 9 | 2022-10-17 Seg | |
 | 10 | 2022-10-19 Qua | |
 | 11 | 2022-10-24 Seg | |
 | 12 | 2022-10-26 Qua | |
