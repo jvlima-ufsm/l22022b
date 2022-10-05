@@ -27,9 +27,9 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | - | 2022-09-19 Seg | **Feriado** (Revolução Farroupilha) |
 | 3 | 2022-09-21 Qua | Alocação dinâmica de memória ([vídeo](https://youtu.be/KxvOkY4ipII), [slides](./aulas/03_memoria/03_memoria.pdf))  |
 | 4 | 2022-09-26 Seg | [Suporte no Windows para C++](./aulas/08_windows) |
-| 5 | 2022-09-28 Qua | [T2](./trabalhos/T2) - Campo minado |
+| 5 | 2022-09-28 Qua | [T2 - Campo minado](./trabalhos/T2) |
 | 6 | 2022-10-03 Seg | [Listas em C++](./aulas/09_listas) |
-| 7 | 2022-10-05 Qua | [T3](./trabalhos/T3) - Previdência simplificada |
+| 7 | 2022-10-05 Qua | [T3 - Previdência simplificada](./trabalhos/T3) |
 | 8 | 2022-10-10 Seg | |
 | - | 2022-10-12 Qua | **Feriado** (Nossa Senhora Aparecida)  |
 | 9 | 2022-10-17 Seg | |
