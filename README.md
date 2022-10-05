@@ -30,9 +30,9 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 5 | 2022-09-28 Qua | [T2 - Campo minado](./trabalhos/T2) |
 | 6 | 2022-10-03 Seg | [Listas em C++](./aulas/09_listas) |
 | 7 | 2022-10-05 Qua | [T3 - Previdência simplificada](./trabalhos/T3) |
-| 8 | 2022-10-10 Seg | |
+| 8 | 2022-10-10 Seg | [Pilhas em C++](./aulas/13_pilhas) |
 | - | 2022-10-12 Qua | **Feriado** (Nossa Senhora Aparecida)  |
-| 9 | 2022-10-17 Seg | |
+| 9 | 2022-10-17 Seg | [T4 - Planilha](./trabalhos/T4) |
 | 10 | 2022-10-19 Qua | |
 | 11 | 2022-10-24 Seg | |
 | 12 | 2022-10-26 Qua | |
@@ -42,7 +42,7 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | - | 2022-11-09 Qua | **JAI** |
 | - | 2022-11-14 Seg | **Feriado** (Proclamação da República) |
 | 14 | 2022-11-16 Qua | **SAINF 2022 ??** |
-| 15 | 2022-11-21 Seg | [Pilhas em C++](./aulas/13_pilhas) |
+| 15 | 2022-11-21 Seg | |
 | 16 | 2022-11-23 Qua | [Árvore binária de busca (ABB)](./aulas/16_abb/)  |
 | 17 | 2022-11-28 Seg | [Smart pointers](./aulas/11_pointers/) |
 | 18 | 2022-11-30 Qua | |
