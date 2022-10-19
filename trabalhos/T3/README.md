@@ -21,7 +21,7 @@ O grande benefício da previdência privada é a vantagem fiscal, ou seja, a tri
 | 8 a 10 anos | 15% | 
 | Acima de 10 anos | 10% | 
 
-Os planos de previdência tem um ou mais fundos de investimento. Os fundos emitem cotas em cada aporte, ou seja, a fração de patrimônio investido. O número de cotas em cada aporte ou resgate depende do valor da cota na data da operação. Vale salientar o regaste sempre incide sobre as cotas mais antigas adquiridas,  ou seja, em uma política LIFO (*last in, first out*).
+Os planos de previdência tem um ou mais fundos de investimento. Os fundos emitem cotas em cada aporte, ou seja, a fração de patrimônio investido. O número de cotas em cada aporte ou resgate depende do valor da cota na data da operação. Vale salientar o regaste sempre incide sobre as cotas mais antigas adquiridas,  ou seja, em uma política FIFO (*first in, first out*).
 
 Sua tarefa é simular aportes e resgates em um plano de previdência simplificado. As operações descritas em uma linha contem:
 - A operação sendo `A` para aporte e `R` para resgate
