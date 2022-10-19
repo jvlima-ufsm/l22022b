@@ -33,7 +33,7 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 8 | 2022-10-10 Seg | [Pilhas em C++](./aulas/13_pilhas) |
 | - | 2022-10-12 Qua | **Feriado** (Nossa Senhora Aparecida)  |
 | 9 | 2022-10-17 Seg | [T4 - Planilha](./trabalhos/T4) |
-| 10 | 2022-10-19 Qua | |
+| 10 | 2022-10-19 Qua | [T4 - Planilha](./trabalhos/T4) |
 | 11 | 2022-10-24 Seg | |
 | 12 | 2022-10-26 Qua | |
 | 13 | 2022-10-31 Seg | |

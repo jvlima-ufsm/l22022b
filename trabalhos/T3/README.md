@@ -62,6 +62,20 @@ Saída:
 5785.26 546.06
 ```
 
+Neste exemplo, temos:
+- O 1o resgate de valor `500` demanda `416.6666` cotas (`500/1.2`). Essas cotas devem sair do 1o aporte sendo o lucro de `83.3334` (`(1.2-1.0)*416.6666`) e imposto devido de 20% sobre 6 anos dando `16.6666`  (`83.3334*20%`). Sobrou `583.3334` cotas do 1o aporte.
+- O 2o resgate de valor `2000.00` demanda `1538.4615` cotas (`2000/1.3`) que deverão ser retiradas de 2 aportes:
+    - O resto do 1o aporte (`583.3334`) com lucro de `175.0000` (`(1.3-1.0)*583.3334`) e imposto devido de 15% sobre 8 anos dando `26.2500` (`26.2500*15%`).
+    - As outras `955.1281` cotas saem do 2o aporte com lucro de `286.5384` (`(1.3-1.0)*955.1281`) e  imposto devido de 20% sobre 7 anos dando `57.3076` (`286.5384*20%`).  
+    - Sobram `44.8719` cotas no 2o aporte.
+    - Lucro total de `461.5384` com imposto pago total de `83.5576`
+- O último resgate retira todos os aportes com valores abaixo:
+    - 2o aporte com `44.8719` cotas com lucro de `40.38471` e imposto devido de 15% sobre 9 anos de `6.0577`
+    - 3o aporte com `1000` cotas com lucro de `900.00` e imposto devido de 15% sobre 8 anos de `135.0`
+    - 4o aporte  com `1000` cotas com lucro de `900.00` e imposto devido de 20% sobre 7 anos de `180.0`
+    - 5o aporte  com `1000` cotas com lucro de `900.00` e imposto devido de 25% sobre 5 anos de `225.0`
+    - Lucro total de `2740.3847` com imposto pago total de `546.0577`
+
 ## Dicas
 - Use uma lista `std::list` para simular o comportamento de aportes em fundos.
 - Crie uma `struct` para guardar informações sobre aportes como valor de cota, número de cotas, e ano do aporte.
