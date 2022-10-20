@@ -202,3 +202,13 @@ TEST_CASE("7/4+1 = 2") {
     REQUIRE(c.fim() == true);
     REQUIRE(c.resultado() == 2);
 }
+
+// parentesis negativo
+TEST_CASE("2*(-1)+3 = 1") {
+    Calculadora<int> c;
+    c.cria();
+    c.formula("2*(-1)+3");
+    REQUIRE(c.fim() == true);
+    REQUIRE(c.resultado() == 1);
+}
+
