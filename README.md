@@ -34,9 +34,9 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | - | 2022-10-12 Qua | **Feriado** (Nossa Senhora Aparecida)  |
 | 9 | 2022-10-17 Seg | [T4 - Planilha](./trabalhos/T4) |
 | 10 | 2022-10-19 Qua | [T4 - Planilha](./trabalhos/T4) |
-| 11 | 2022-10-24 Seg | |
-| 12 | 2022-10-26 Qua | |
-| 13 | 2022-10-31 Seg | |
+| 11 | 2022-10-24 Seg | [T4 - Planilha](./trabalhos/T4) |
+| 12 | 2022-10-26 Qua | [T4 - Planilha](./trabalhos/T4) |
+| 13 | 2022-10-31 Seg | [T5](./trabalhos/T5) |
 | - | 2022-11-02 Qua | **Feriado** (Finados)  |
 | - | 2022-11-07 Seg | **JAI** |
 | - | 2022-11-09 Qua | **JAI** |
