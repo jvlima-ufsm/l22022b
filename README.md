@@ -36,28 +36,28 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 10 | 2022-10-19 Qua | [T4 - Planilha](./trabalhos/T4) |
 | 11 | 2022-10-24 Seg | [T4 - Planilha](./trabalhos/T4) |
 | 12 | 2022-10-26 Qua | [T4 - Planilha](./trabalhos/T4) |
-| 13 | 2022-10-31 Seg | [T5](./trabalhos/T5) |
+| 13 | 2022-10-31 Seg | [Árvore binária de busca (ABB)](./aulas/16_abb/) |
 | - | 2022-11-02 Qua | **Feriado** (Finados)  |
 | - | 2022-11-07 Seg | **JAI** |
 | - | 2022-11-09 Qua | **JAI** |
 | - | 2022-11-14 Seg | **Feriado** (Proclamação da República) |
-| 14 | 2022-11-16 Qua | **SAINF 2022 ??** |
-| 15 | 2022-11-21 Seg | |
-| 16 | 2022-11-23 Qua | [Árvore binária de busca (ABB)](./aulas/16_abb/)  |
-| 17 | 2022-11-28 Seg | [Smart pointers](./aulas/11_pointers/) |
-| 18 | 2022-11-30 Qua | |
-| 19 | 2022-12-05 Seg | [Árvores balanceadas (AVL)](./aulas/19_avl/) |
-| 20 | 2022-12-07 Qua | [Árvores AVL (continuação)](./aulas/20_avl/) |
-| 21 | 2022-12-12 Seg | |
-| 22 | 2022-12-14 Qua | |
-| 23 | 2022-12-19 Seg | |
-| 24 | 2022-12-21 Qua | |
-| 25 | 2023-01-02 Seg | |
-| 26 | 2023-01-04 Qua | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
-| 27 | 2023-01-09 Seg | |
-| 28 | 2023-01-11 Qua | |
-| 29 | 2023-01-16 Seg | |
-| 30 | 2023-01-18 Qua | |
+| 14 | 2022-11-16 Qua | **SAINF 2022** |
+| 15 | 2022-11-21 Seg | [T5 - Árvore Binária de Busca](./trabalhos/T5) |
+| 16 | 2022-11-23 Qua | [Árvores balanceadas (AVL)](./aulas/19_avl/)  |
+| 17 | 2022-11-28 Seg | [Árvores AVL (continuação)](./aulas/20_avl/)  |
+| 18 | 2022-11-30 Qua | [T6](./trabalhos/T6) |
+| 19 | 2022-12-05 Seg | [T6](./trabalhos/T6) |
+| 20 | 2022-12-07 Qua | [T6](./trabalhos/T6) |
+| 21 | 2022-12-12 Seg | [T6](./trabalhos/T6) |
+| 22 | 2022-12-14 Qua | [T6](./trabalhos/T6) |
+| 23 | 2022-12-19 Seg | [T6](./trabalhos/T6) |
+| 24 | 2022-12-21 Qua | [T6](./trabalhos/T6) |
+| 25 | 2023-01-02 Seg | [T7](./trabalhos/T7) |
+| 26 | 2023-01-04 Qua | [T7](./trabalhos/T7) |
+| 27 | 2023-01-09 Seg | [T7](./trabalhos/T7) |
+| 28 | 2023-01-11 Qua | [T7](./trabalhos/T7) |
+| 29 | 2023-01-16 Seg | [Smart pointers](./aulas/11_pointers/)  |
+| 30 | 2023-01-18 Qua | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
 | - | 2023-02-06 Seg | Avaliações Finais |
 
 ## Material de apoio
