@@ -3,7 +3,7 @@
 
 ## Deadline
 
-Prazo: *02/11/2022 (Qua)** pelo link do GitHub (https://classroom.github.com/a/BFTVPcUv).
+Prazo: *04/11/2022 (Qua)** pelo link do GitHub (https://classroom.github.com/a/BFTVPcUv).
 
 Você deve escolher seu nome na lista de alunos. Em seguida, o GitHub irá criar um repositório deste trabalho em seu usuário.
 
