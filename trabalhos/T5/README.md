@@ -48,7 +48,6 @@ Comentários sobre o exemplo:
 
 ## Regras
 - Usar somente C++!
-- Use `std::stack` ou `std::vector`
 - Não modifique os testes, apenas complete o código da calculadora e tudo será **Success**
 - Não compila, zero.
 - Plágio, zero.
