@@ -12,6 +12,8 @@ Horários: segundas e quartas, 14:30 às 16:30.
 
 **Página do corretor:** https://l22022b.github.io/
 
+**NOTAS:** https://docs.google.com/spreadsheets/d/e/2PACX-1vTnWBjwgOEBG1rXokjiU5n5ZV_ujYpM4bOKOene4JQiLYNWvh4tLSJPuJyZcGzItspDQIFcJiGrCVRH/pubhtml
+
 Calendário UFSM: https://www.ufsm.br/calendario/
 
 ## Sobre a disciplina
