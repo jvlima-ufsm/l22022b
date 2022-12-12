@@ -52,14 +52,16 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 20 | 2022-12-07 Qua | [T6 - AVL](./trabalhos/T6) |
 | 21 | 2022-12-12 Seg | [T6 - AVL](./trabalhos/T6) |
 | 22 | 2022-12-14 Qua | [T6 - AVL](./trabalhos/T6) |
-| 23 | 2022-12-19 Seg | [T6 - AVL](./trabalhos/T6) |
-| 24 | 2022-12-21 Qua | [T6 - AVL](./trabalhos/T6) |
-| 25 | 2023-01-02 Seg | [T7](./trabalhos/T7) |
-| 26 | 2023-01-04 Qua | [T7](./trabalhos/T7) |
-| 27 | 2023-01-09 Seg | [T7](./trabalhos/T7) |
-| 28 | 2023-01-11 Qua | [T7](./trabalhos/T7) |
-| 29 | 2023-01-16 Seg | [Smart pointers](./aulas/11_pointers/)  |
-| 30 | 2023-01-18 Qua | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
+| - | 2022-12-19 Seg | **Sem aula** (Recesso) |
+| - | 2022-12-21 Qua | **Sem aula** (Recesso) |
+| 23 | 2023-01-02 Seg | [T7](./trabalhos/T7) |
+| 24 | 2023-01-04 Qua | [T7](./trabalhos/T7) |
+| 25 | 2023-01-09 Seg | [T7](./trabalhos/T7) |
+| 26 | 2023-01-11 Qua | [T7](./trabalhos/T7) |
+| 27 | 2023-01-16 Seg | [Smart pointers](./aulas/11_pointers/)  |
+| 28 | 2023-01-18 Qua | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
+| 29 | 2023-01-23 Seg | [T7](./trabalhos/T7) |
+| 30 | 2023-01-25 Qua | [T7](./trabalhos/T7) |
 | - | 2023-02-06 Seg | Avaliações Finais |
 
 ## Material de apoio
