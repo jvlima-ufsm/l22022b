@@ -72,4 +72,5 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 - [Git Cheat Sheets](https://github.github.com/training-kit/)
 - [Tech Talk: Linux Tolvards on Git](http://youtu.be/4XpnKHJAok8)
 - [Introduction to Git with Scott Chacon of GitHub](https://youtu.be/ZDR433b0HJY)
-
+- Cormen, Algoritmos: teoria e prática, 3o edição. ([notas 2008](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/lecture-notes/), [notas 2011](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/))
+- Sedgewick, Algorithms, 4th edition. ([slides](http://algs4.cs.princeton.edu/lectures/))
