@@ -54,14 +54,14 @@ O objetivo da disciplina de Laboratório de Programação II é utilizar as prin
 | 22 | 2022-12-14 Qua | [T6 - AVL](./trabalhos/T6) |
 | - | 2022-12-19 Seg | **Sem aula** (Recesso) |
 | - | 2022-12-21 Qua | **Sem aula** (Recesso) |
-| 23 | 2023-01-02 Seg | [T7](./trabalhos/T7) |
-| 24 | 2023-01-04 Qua | [T7](./trabalhos/T7) |
-| 25 | 2023-01-09 Seg | [T7](./trabalhos/T7) |
-| 26 | 2023-01-11 Qua | [T7](./trabalhos/T7) |
-| 27 | 2023-01-16 Seg | [Smart pointers](./aulas/11_pointers/)  |
-| 28 | 2023-01-18 Qua | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
-| 29 | 2023-01-23 Seg | [T7](./trabalhos/T7) |
-| 30 | 2023-01-25 Qua | [T7](./trabalhos/T7) |
+| 23 | 2023-01-02 Seg | Grafos ([não-direcionados](./aulas/23_grafos/41UndirectedGraphs.pdf), [direcionados](./aulas/23_grafos/42DirectedGraphs.pdf))  |
+| 24 | 2023-01-04 Qua | Algoritmo de Dijkstra ([slides](aulas/23_grafos/44ShortestPaths.pdf), [demo](./aulas/23_grafos/44DemoDijkstra.pdf)) |
+| 25 | 2023-01-09 Seg | [T7 - Dijkstra](./trabalhos/T7) |
+| 26 | 2023-01-11 Qua | [T7 - Dijkstra](./trabalhos/T7) |
+| 27 | 2023-01-16 Seg | [T7 - Dijkstra](./trabalhos/T7) |
+| 28 | 2023-01-18 Qua | [T7 - Dijkstra](./trabalhos/T7) |
+| 29 | 2023-01-23 Seg | [Smart pointers](./aulas/11_pointers/) |
+| 30 | 2023-01-25 Qua | [Containers e Algoritmos C++ STL](./aulas/20_algorithms) |
 | - | 2023-02-06 Seg | Avaliações Finais |
 
 ## Material de apoio
